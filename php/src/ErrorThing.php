@@ -6,22 +6,31 @@
 
 <div class='grid_6 leading table-100'>
 <h2>Section A </h2>
-<?= render_it($data,
+<?= render_it(
+    $data,
     $cols,
     array_merge($keys, A("render_options")),
-    "Not Found"); ?>
+    "Not Found"
+); ?>
 </div>
 
 
 <div class='grid_6 leading table-100'>
 <h2>Section B</h2>
-<?= render_it($data,    $cols,
+<?= render_it(
+    $data,
+    $cols,
     array_merge($keys, A("render_options")),
-    "Not Found"); ?>
+    "Not Found"
+); ?>
 </div>
 
 <div class='grid_6 leading table-100'>
 <h2>Section C</h2>
-<?= render_it($data,   $cols,    array_merge($keys, A("render_options")),
-    "Not Found"); ?>
+<?= render_it(
+    $data,
+    $cols,
+    array_merge($keys, A("render_options")),
+    "Not Found"
+); ?>
 </div>
