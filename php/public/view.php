@@ -40,8 +40,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?php
                                 $extensions = explode(',', $task->file_types);
 foreach ($extensions as $extension) {
-  $src = FileExtensionsEnum::ICON[$extension];
-  echo "<div class=\"d-flex flex-column align-items-center mr-3\"><img src=\"{$src}\" alt=\"{$extension}\" width=\"30\" height=\"30\"><span>.{$extension}</span></div>";
+    $src = FileExtensionsEnum::ICON[$extension];
+    echo "<div class=\"d-flex flex-column align-items-center mr-3\"><img src=\"{$src}\" alt=\"{$extension}\" width=\"30\" height=\"30\"><span>.{$extension}</span></div>";
 }
 ?>
                             </div>
@@ -54,8 +54,8 @@ foreach ($extensions as $extension) {
 'options' => ['enctype' => 'multipart/form-data'],
                             ]); ?>
                            <?= $form->field($model, 'files[]')->widget(
-                             FileInput::class,
-                             [
+                               FileInput::class,
+                               [
                               'options'=>[
                               'multiple'=>true,
                               ],
