@@ -1,7 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "php"
+name = "java"
 
-[[transformers]]
-name = "php-cs-fixer"
+  [analyzers.meta]
+  runtime_version = "17"
